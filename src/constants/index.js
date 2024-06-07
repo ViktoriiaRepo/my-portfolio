@@ -13,7 +13,7 @@ import {
   typescript,
   postgre,
 } from '../assets/img/tech';
-import { met, weather, todos } from '../assets/img/projects';
+import { met, weather, todos, gadgets } from '../assets/img/projects';
 
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
@@ -119,6 +119,35 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    name: 'Nice Gadgets',
+    description:
+      'Team project! With a sleek design and intuitive features, Nice Gadgets offers users the ability to explore and shop for their favorite tech products.',
+    tags: [
+      {
+        name: 'react',
+        color: 'text-[#2cc7fa] text-shadow',
+      },
+      {
+        name: 'scss',
+        color: 'text-[#fefe47] text-shadow',
+      },
+      {
+        name: 'ts',
+        color: 'text-[#ff57bc] text-shadow',
+      },
+      {
+        name: 'openai',
+        color: 'text-[#ce58f9] text-shadow',
+      },
+      {
+        name: 'three.js',
+        color: 'text-[#2cc7fa] text-shadow',
+      },
+    ],
+    image: gadgets,
+    link: 'https://github.com/fs-jan24-codeup/phone-catalog',
+  },
   {
     name: 'Todo App',
     description:
