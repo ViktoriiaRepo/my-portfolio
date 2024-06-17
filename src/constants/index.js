@@ -13,7 +13,7 @@ import {
   typescript,
   postgre,
 } from '../assets/img/tech';
-import { met, weather, todos, gadgets } from '../assets/img/projects';
+import { met, weather, todos, gadgets, dolphins } from '../assets/img/projects';
 
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
@@ -226,5 +226,26 @@ export const projects = [
     ],
     image: weather,
     link: 'https://github.com/ViktoriiaRepo/weather-app',
+  },
+  {
+    name: 'Save Dolphins Parallax',
+    description:
+      'Welcome to my immersive website designed to explore the art of scrolling and the captivating parallax effects.',
+    tags: [
+      {
+        name: 'html',
+        color: 'text-[#2cc7fa] text-shadow',
+      },
+      {
+        name: 'css',
+        color: 'text-[#fefe47] text-shadow',
+      },
+      {
+        name: 'js',
+        color: 'text-[#ff57bc] text-shadow',
+      },
+    ],
+    image: dolphins,
+    link: 'https://github.com/ViktoriiaRepo/parallax',
   },
 ];

@@ -3,5 +3,6 @@ import weather from './weather.png';
 import todos from './todos.png';
 import met from './met.png';
 import gadgets from './gadgets.png';
+import dolphins from './dolphins.png';
 
-export { jorney, weather, todos, met, gadgets };
+export { jorney, weather, todos, met, gadgets, dolphins };
