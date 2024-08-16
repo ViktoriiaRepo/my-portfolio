@@ -13,7 +13,14 @@ import {
   typescript,
   postgre,
 } from '../assets/img/tech';
-import { met, weather, todos, gadgets, dolphins } from '../assets/img/projects';
+import {
+  met,
+  weather,
+  todos,
+  gadgets,
+  dolphins,
+  spaceshooter,
+} from '../assets/img/projects';
 
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
@@ -119,6 +126,31 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    name: 'Space Shooter',
+    description:
+      'A thrilling space shooter game where players navigate through galaxies, battling alien fleets and asteroids, upgrading their ship, and saving the universe.',
+    tags: [
+      {
+        name: 'pixi.js',
+        color: 'text-[#2cc7fa] text-shadow',
+      },
+      {
+        name: 'css',
+        color: 'text-[#fefe47] text-shadow',
+      },
+      {
+        name: 'ts',
+        color: 'text-[#ff57bc] text-shadow',
+      },
+      {
+        name: 'webpack',
+        color: 'text-[#ce58f9] text-shadow',
+      },
+    ],
+    image: spaceshooter,
+    link: 'https://github.com/ViktoriiaRepo/space-shooter',
+  },
   {
     name: 'Nice Gadgets',
     description:
@@ -229,8 +261,7 @@ export const projects = [
   },
   {
     name: 'Save Dolphins Parallax',
-    description:
-      'Welcome to my immersive website designed to explore the art of scrolling and the captivating parallax effects.',
+    description: `Welcome to my immersive website, where you'll explore the art of scrolling and experience captivating parallax effects in a visually stunning environment.`,
     tags: [
       {
         name: 'html',
