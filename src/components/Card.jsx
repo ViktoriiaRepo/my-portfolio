@@ -1,17 +1,17 @@
-import { motion } from "framer-motion";
-import { BsGithub } from "react-icons/bs";
-import { Tilt } from "react-tilt";
+import { motion } from 'framer-motion';
+import { BsGithub } from 'react-icons/bs';
+import { Tilt } from 'react-tilt';
 
-import PropTypes from "prop-types";
-import { styles } from "../styles";
+import PropTypes from 'prop-types';
+import { styles } from '../styles';
 
-const Card = ({ name, description, tags, image, link }) => {
+const Card = ({ name, description, tags, image, link, linkPage }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.7 }}
       whileInView={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: 1 }}
-      transition={{ type: "spring", stiffness: 30 }}
+      transition={{ type: 'spring', stiffness: 30 }}
     >
       <Tilt
         options={{
@@ -19,27 +19,34 @@ const Card = ({ name, description, tags, image, link }) => {
           scale: 1,
           speed: 400,
         }}
-        className="glassmorphism p-5 rounded-2xl sm:w-[360px] w-full"
+        className='glassmorphism p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className="relative w-full h-[220px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-        </div>
-
-        <div className="mt-5">
-          <h3 className={`${styles.sectionTitle}`}>{name}</h3>
-          <p className="mt-2 text-white text-[14px]">{description}</p>
-        </div>
-        <div className="absolute  flex justify-end items-end m-4 inset-0 card-img_hover">
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <BsGithub className="github-btn" />
+        <div className='relative w-full h-[220px]'>
+          <a
+            href={linkPage}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='relative z-10'
+          >
+            <img
+              src={image}
+              alt='project_image'
+              className='w-full h-full object-cover rounded-2xl'
+            />
           </a>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className='mt-5'>
+          <h3 className={`${styles.sectionTitle}`}>{name}</h3>
+          <p className='mt-2 text-white text-[14px]'>{description}</p>
+        </div>
+        <div className='absolute  flex justify-end items-end m-4 inset-0 card-img_hover'>
+          <a href={link} target='_blank' rel='noopener noreferrer'>
+            <BsGithub className='github-btn' />
+          </a>
+        </div>
+
+        <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -67,4 +74,5 @@ Card.propTypes = {
   ).isRequired,
   image: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  linkPage: PropTypes.string.isRequired,
 };

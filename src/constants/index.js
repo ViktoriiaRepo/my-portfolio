@@ -150,6 +150,7 @@ export const projects = [
     ],
     image: spaceshooter,
     link: 'https://github.com/ViktoriiaRepo/space-shooter',
+    linkPage: 'https://space-shooter-viktoriia.netlify.app/',
   },
   {
     name: 'Nice Gadgets',
@@ -179,6 +180,7 @@ export const projects = [
     ],
     image: gadgets,
     link: 'https://github.com/fs-jan24-codeup/phone-catalog',
+    linkPage: 'https://fs-jan24-codeup.github.io/phone-catalog/',
   },
   {
     name: 'Todo App',
@@ -212,6 +214,7 @@ export const projects = [
     ],
     image: todos,
     link: 'https://github.com/ViktoriiaRepo/todo-app',
+    linkPage: 'https://viktoriiarepo.github.io/todo-app/',
   },
   {
     name: 'MET landing',
@@ -237,6 +240,7 @@ export const projects = [
     ],
     image: met,
     link: 'https://github.com/ViktoriiaRepo/MET-landing-page',
+    linkPage: 'https://viktoriiarepo.github.io/MET-landing-page/',
   },
   {
     name: 'Weather App',
@@ -258,6 +262,7 @@ export const projects = [
     ],
     image: weather,
     link: 'https://github.com/ViktoriiaRepo/weather-app',
+    linkPage: 'https://viktoriiarepo.github.io/weather-app/',
   },
   {
     name: 'Save Dolphins Parallax',
@@ -278,5 +283,6 @@ export const projects = [
     ],
     image: dolphins,
     link: 'https://github.com/ViktoriiaRepo/parallax',
+    linkPage: 'https://viktoriiarepo.github.io/parallax/',
   },
 ];
