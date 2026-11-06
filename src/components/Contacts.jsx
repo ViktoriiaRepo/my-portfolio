@@ -68,14 +68,14 @@ const Contacts = () => {
   return (
     <section
       id='contacts'
-      className={`${styles.paddingX} justify-around pt-[70px] pb-[70px] mt-2 xl:flex-row  flex overflow-hidden`}
+      className={`${styles.paddingX} flex w-full flex-col justify-around overflow-hidden pt-[70px] pb-[70px] mt-2 xl:flex-row`}
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
         whileInView={{ opacity: 1, scale: 1 }}
         whileHover={{ scale: 1 }}
         transition={{ type: 'spring', stiffness: 30 }}
-        className='flex-[0.3] glassmorphism p-8 rounded-2xl'
+        className='glassmorphism w-full max-w-lg min-w-0 p-4 sm:p-8 rounded-2xl mx-auto xl:flex-[0.3]'
       >
         <h2 className={`${styles.sectionTitle}`}>Get in touch</h2>
 
@@ -91,7 +91,7 @@ const Contacts = () => {
               value={formik.values.name}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className='glassmorphism-form py-3 px-6 rounded-lg outline-none border-none font-medium'
+              className='glassmorphism-form w-full min-w-0 max-w-full py-3 px-6 rounded-lg outline-none border-none font-medium'
               placeholder='Your Name'
             />
             {formik.touched.name && formik.errors.name ? (
@@ -106,7 +106,7 @@ const Contacts = () => {
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className='glassmorphism-form py-3 px-6 rounded-lg outline-none border-none font-medium'
+              className='glassmorphism-form w-full min-w-0 max-w-full py-3 px-6 rounded-lg outline-none border-none font-medium'
               placeholder='Your Email'
             />
             {formik.touched.email && formik.errors.email ? (
@@ -121,7 +121,7 @@ const Contacts = () => {
               value={formik.values.message}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className='glassmorphism-form py-3 px-6 rounded-lg outline-none border-none font-medium'
+              className='glassmorphism-form w-full min-w-0 max-w-full resize-y py-3 px-6 rounded-lg outline-none border-none font-medium'
               placeholder='Type Your Message'
             />
             {formik.touched.message && formik.errors.message ? (
